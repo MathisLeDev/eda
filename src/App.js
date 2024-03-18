@@ -1,5 +1,6 @@
 // TODO: Mise en place d'un Producteur-Consommateur basé sur des Événements
 import {useEffect, useState} from "react";
+import ThirdPart from "./components/thirdPart";
 
 class Evenement {
   constructor(type, payload) {
@@ -226,8 +227,12 @@ function App() {
 
   return (
       <div className="App">
+        <h1>
+          Partie 1 (voir les logs dans la console)
+        </h1>
+
         <header className="App-header">
-          <h1>Test</h1>
+          <h1>Partie 2</h1>
         <div style={{display:"flex"}}>
           <div style={{border: "1px solid black", margin: 10, padding: 20}}>
             <h1>Admin</h1>
@@ -281,6 +286,11 @@ function App() {
 
           </div>
         </header>
+
+        <h1>
+          Partie 3 (voir les logs dans la console)
+        </h1>
+        <ThirdPart />
       </div>
   );
 }
